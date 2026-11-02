@@ -1,0 +1,51 @@
+###
+GET http://127.0.0.1:8000/api/doctors/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/doctors/
+Content-Type: application/json
+
+{
+    "doctor_name": "Sujith",
+    "specialization": "Orthologist",
+    "experience": 6,
+    "hospital": "Devamatha",
+    "consultation_fee": 400
+}
+
+###
+GET http://127.0.0.1:8000/api/doctors/1/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/api/doctors/3/
+Content-Type: application/json
+
+{
+    "doctor_name": "Midhun",
+    "specialization": "Cardiologist",
+    "experience": 8,
+    "hospital": "Devamatha",
+    "consultation_fee": 600
+}
+
+
+###
+DELETE http://127.0.0.1:8000/api/doctors/2/
+
+###
+GET http://127.0.0.1:8000/api/appointments/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/appointments/
+Content-Type: application/json
+
+{
+    "patient_name" :"Alan",
+    "phone": "7870867336",
+    "doctor_id":3,
+    "appointment_date":"2026-11-01",
+    "problem":"Chest Pain"
+}
